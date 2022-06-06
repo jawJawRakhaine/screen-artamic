@@ -1,0 +1,10 @@
+import Screen from "./screen.js";
+const screen = new Screen(800, 600, 50);
+screen.show();
+// screen.circle();
+screen.rectangle();
+console.log(screen);
+screen.triangle();
+screen.ctx.beginPath();
+screen.ctx.arc(100, 100, 50, 0, 2 * Math.PI);
+screen.ctx.stroke();
